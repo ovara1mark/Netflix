@@ -1,7 +1,7 @@
 import React from "react";
 
-export const BrowseByLahnguagesAdults = () => {
+export const BrowseByLanguagesAdults = () => {
     return (
-        <div><Hello></Hello></div>
+        <div>Hello</div>
     )
-}
+};
