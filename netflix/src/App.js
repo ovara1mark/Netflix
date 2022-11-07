@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/" element={<HomeAdults />} />
+        <Route exact path="/homeadults" element={<HomeAdults />} />
         <Route exact path="/homekids" element={<HomeKids />} />
         <Route exact path="/tvshowsadults" element={<TvShowsAdults />} />
         <Route exact path="/tvshowskids" element={<TvShowsKids />} />
@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/newandpopularkids" element={<NewAndPopularKids />} />
         <Route exact path="/mylistadults" element={<MyListAdults />} />
         <Route exact path="/mylistkids" element={<MyListKids />} />
-        <Route exact path="browsebylanguages" element={<BrowseByLanguagesAdults />} />
+        <Route exact path="/browsebylanguagesadults" element={<BrowseByLanguagesAdults />} />
         <Route exact path="/browsebylanguageskids" element={<BrowseByLanguagesKids />} />
         <Route exact path="/characters" element={<Characters />} />
       </Routes>
