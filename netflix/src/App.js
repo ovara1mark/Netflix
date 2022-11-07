@@ -1,7 +1,6 @@
-import "./index.css";
+import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { BrowseByLanguagesAdults, Characters, HomeAdults, HomeKids, LandingPage, MoviesAdults, MoviesKids, MyListAdults, MyListKids, NewAndPopularAdults, NewAndPopularKids, TvShowsAdults, TvShowsKids } from "./components/Pages";
-import { BrowseByLanguagesKids } from "./components/Pages/BrowseByLanguagesKids";
+import { AdultProfile, BrowseByLanguagesAdults, BrowseByLanguagesKids, Characters, HomeAdults, HomeKids, KidsProfile, LandingPage, MoviesAdults, MoviesKids, MyListAdults, MyListKids, NewAndPopularAdults, NewAndPopularKids, TvShowsAdults, TvShowsKids } from "./components/Pages";
 
 function App() {
   return (
@@ -21,6 +20,8 @@ function App() {
         <Route exact path="/browsebylanguagesadults" element={<BrowseByLanguagesAdults />} />
         <Route exact path="/browsebylanguageskids" element={<BrowseByLanguagesKids />} />
         <Route exact path="/characters" element={<Characters />} />
+        <Route exact path="/adultprofile" element={<AdultProfile />} />
+        <Route exact path="/kidsprofile" element={<KidsProfile />} />
       </Routes>
     </BrowserRouter>
   );
