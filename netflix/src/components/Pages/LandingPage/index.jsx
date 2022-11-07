@@ -1,7 +1,11 @@
 import React from "react";
+import { NavBar } from "../../molecules";
 
 export const LandingPage = () => {
     return (
-        <div>Hello</div>
+        <div>
+            <h1>Hello</h1>
+            <NavBar />
+        </div>
     );
 };

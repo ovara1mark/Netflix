@@ -7,10 +7,10 @@ export const NavBar = () => {
     <nav style={{display: "flex"}}>
          <div>
             <div>
-                <h1>Logo</h1>
+                <img src="" alt="" />
             </div>
             <div>
-                <Link to="./homeadults">Home</Link>
+                <Link to="./Landingpage">Home</Link>
                 <Link to="./tvshowsadults">TV Shows</Link>
                 <Link to="./moviesadults">Movies</Link>
                 <Link to="./newandpopularadults">New & Popular</Link>
@@ -27,5 +27,5 @@ export const NavBar = () => {
             </div>
         </div>
     </nav>
-  )
+  );
 };
