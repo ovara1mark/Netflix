@@ -1,5 +1,6 @@
 import React from "react";
-import { LandingHeader, LandingNavbar } from "../../molecules";
+import { LandingNavbar } from "../../molecules";
+import { LandingHeader } from "../../organisms";
 import { PageTemplate } from "../../templates/PageTemplate";
 
 export const LandingPage = () => {

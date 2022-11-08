@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "../../atoms";
+import { EmailRegister } from "../../molecules/EmailRegister";
 import { Header } from "./app";
 
 export const LandingHeader = () => {
@@ -22,6 +23,7 @@ export const LandingHeader = () => {
             membership.
           </Text>
         </div>
+        <EmailRegister />
       </Header>
     </>
   );

@@ -1,1 +1,1 @@
-export * from "./Hey";
+export * from "./LandingHeader";
