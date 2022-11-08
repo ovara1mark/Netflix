@@ -15,9 +15,12 @@ export const HomeAdults = () => {
             <p style={{textShadow: "2px 2px 4px rgb(0 0 0 / 45%)", color: "white", width: "85%"}}>
             A TV producer discovers a secret supernatural world as she becomes entangled with a former deity who's spent centuries searching for his lost lover.
             </p>
+            <div style={{display: "flex", justifyContent: "space-between"}}>
             <div style={{display: "flex", gap: "16px"}}>
             <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px"}}><FaPlay /> Play</button>
             <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px", backgroundColor: "rgba(109, 109, 110, 0.7)", color: "white"}}><FaInfoCircle /> More Info</button>
+            </div>
+            <p style={{color: "white", position: "absolute", right: "-630px", backgroundColor: "rgba(51,51,51,.6)", width: "70px", padding: "5px", border: "3px #dcdcdc", borderLeftStyle: "solid"}}>18+</p>
             </div>
             </div>
         </div>
