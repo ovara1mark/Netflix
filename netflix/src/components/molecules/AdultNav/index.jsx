@@ -10,12 +10,12 @@ export const AdultNav = () => {
                 <img src="" alt="" />
             </div>
             <div>
-                <Link to="./homeadults">Home</Link>
-                <Link to="./tvshowsadults">TV Shows</Link>
-                <Link to="./moviesadults">Movies</Link>
-                <Link to="./newandpopularadults">New & Popular</Link>
-                <Link to="./mylistadults">My List</Link>
-                <Link to="./browsebylanguagesadults">Browse by Languages</Link>
+                <span>Home</span>
+                <span>TV Shows</span>
+                <span>Movies</span>
+                <span>New & Popular</span>
+                <span>My List</span>
+                <span>Browse by Languages</span>
             </div>
             <div>
                 <FaSearch />
