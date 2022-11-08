@@ -1,7 +1,7 @@
 import React from "react";
 import { AdultNav } from "../../molecules";
 import title from "../../../Asset/movie-title.webp";
-import { FaInfoCircle, FaPlay } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaInfoCircle, FaPlay } from "react-icons/fa";
 
 
 export const HomeAdults = () => {
@@ -17,24 +17,391 @@ export const HomeAdults = () => {
             </p>
             <div style={{display: "flex", justifyContent: "space-between"}}>
             <div style={{display: "flex", gap: "16px"}}>
-            <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px"}}><FaPlay /> Play</button>
-            <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px", backgroundColor: "rgba(109, 109, 110, 0.7)", color: "white"}}><FaInfoCircle /> More Info</button>
+            <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px", border: "none"}}><FaPlay /> Play</button>
+            <button style={{display: "flex", alignItems: "center", gap: "8px", padding: "10px 24px", fontWeight: "bold", fontSize: "1rem", borderRadius: "5px", backgroundColor: "rgba(109, 109, 110, 0.7)", color: "white", border: "none"}}><FaInfoCircle /> More Info</button>
             </div>
             <p style={{color: "white", position: "absolute", right: "-630px", backgroundColor: "rgba(51,51,51,.6)", width: "70px", padding: "5px", border: "3px #dcdcdc", borderLeftStyle: "solid"}}>18+</p>
             </div>
             </div>
         </div>
-        <div style={{width: "100%", padding: "0px 50px"}}>
-            <h3 style={{color: "white"}}>Bingeworthy TvShows</h3>
-            <div style={{display: "flex", alignItems: "center", overflowX: "hidden", width: "100%", position: "relative", marginTop: "500px", gap: "4px" }}>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "500px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>Bingeworthy TvShows</p>
+            <div style={{display: "flex", gap: "8px", overflowX: "hidden", width: "fit-content"}}>
             <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
-            <img style={{width: "20%", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>Trending Now</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>Top 10 TV Shows in Nigeria Today</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>Retro TV</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Dramas</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
+            </div>
+        </div>
+        <div style={{width: "100%", padding: "0px 50px", height: "25vh",}}>
+            <div style={{width: "100%", position: "relative", marginTop: "100px", }}>
+            <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>TV Thrillers</p>
+            <div style={{display: "flex", gap: "4px", overflowX: "hidden", width: "fit-content"}}>
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            <img style={{width: "20%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}}src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031" alt="" />
+            </div>
+            </div>
+            <div style={{position: "relative", color: "white", display: "flex", justifyContent: "space-between", fontSize: "3rem", marginTop: "-90px"}}>
+            <FaAngleLeft />
+            <FaAngleRight />
             </div>
         </div>
         </>
