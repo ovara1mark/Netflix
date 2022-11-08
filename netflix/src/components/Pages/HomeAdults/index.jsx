@@ -1,8 +1,8 @@
 import React from "react";
-import { NavBar } from "../../molecules";
+
 
 export const HomeAdults = () => {
     return (
-        <NavBar />
+        <div><h1>hello</h1></div>
     );
-};
+}

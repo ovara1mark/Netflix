@@ -13,5 +13,5 @@ export const Text = ({ type, children }) => {
     return <h2>{children}</h2>;
   }
 
-  return <span>{children}</span>;
+  return <p>{children}</p>;
 };

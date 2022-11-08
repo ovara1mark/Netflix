@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Input = ({ label, onChange, type }) => {
+export const Input = ({ label, type }) => {
   if (type === "search") {
-    return (
+    return ( 
       <label htmlFor={label}>
         {label}
-        <input id={label} type="search" onChange={onChange} />
+        <input id={label} type="search" />
       </label>
     );
   }
@@ -13,7 +13,7 @@ export const Input = ({ label, onChange, type }) => {
   return (
     <label htmlFor={label}>
       {label}
-      <input id={label} type="text" onChange={onChange} />
+      <input id={label} type="text" />
     </label>
   );
 };
