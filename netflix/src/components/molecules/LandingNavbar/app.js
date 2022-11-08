@@ -14,8 +14,11 @@ export const NavLeft = styled.div`
     width: 7rem;
   }
 
+
+
   @media screen and (max-width: 550px) {
     width: 6rem;
+    bg
   }
 `;
 
