@@ -1,9 +1,9 @@
 import "./App.css";
-import { HomeAdults } from "./components";
+import { AdultProfile } from "./components";
 
 function App() {
   return (
-    <HomeAdults />
+    <AdultProfile />
   );
 }
 
