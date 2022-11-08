@@ -1,38 +1,106 @@
-.App {
+:root {
+  --btn-red: #e50914;
+  --btn-white: #fffff7;
+  --landing-h1: 3.125rem;
+  --landing-p: 1.625rem;
+  --landing-p-2: 1.2rem;
+  --btn-font-text-1: 1rem;
+  --btn-font-text-2: 0.8rem;
+  --btn-border-radius: 0.3rem;
+  --font-family-bebas: "Bebas Neue", cursive;
+  --font-family-sans: "Open Sans", sans-serif;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* landing page */
+
+.landing-nav-btn {
+  background-color: var(--btn-red);
+  color: var(--btn-white);
+  font-size: var(--btn-font-text-1);
+  border-radius: var(--btn-border-radius);
+  padding: 7px 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.landing-logo {
+  max-width: 100%;
+}
+
+.landing-header-contain {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f669a8f4-de1e-49d7-bb56-c9bd1f4a9069/fbe6b535-b521-4096-929b-5bf1d6a7f700/NG-en-20221031-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-header {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.landing-h1 {
+  font-size: var(--landing-h1);
   text-align: center;
+  color: var(--btn-white);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-600);
+  width: 40rem;
+  line-height: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-p {
+  font-size: var(--landing-p);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  line-height: 2em;
+  text-align: center;
+  color: var(--btn-white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-p-2 {
+  font-size: var(--landing-p-2);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  text-align: center;
+  color: var(--btn-white);
+  padding: 1rem 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.holder {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 7rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.holder-2,
+.holder-3 {
+  display: flex;
+  justify-content: center;
 }
