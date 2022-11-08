@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch, FaBell, FaCaretDown, FaSmileWink, FaUserSlash, FaUserFriends, FaRegUser } from "react-icons/fa";
+import { FaSearch, FaBell, FaCaretDown, FaRegUser } from "react-icons/fa";
 import logo from "../../../Asset/logo.svg";
 
 export const AdultNav = () => {
