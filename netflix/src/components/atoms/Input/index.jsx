@@ -18,14 +18,15 @@ export const Input = ({ label, onChange, type, className, placeholder }) => {
   if (type === "email") {
     return (
       <label htmlFor={label}>
-        {label}
         <input
           id={label}
           type="email"
           placeholder={placeholder}
           className={className}
           onChange={onChange}
+          required
         />
+        {label}
       </label>
     );
   }

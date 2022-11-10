@@ -109,7 +109,7 @@ p {
 .email-holder {
   display: flex;
   justify-content: center;
-  margin: 1rem 0rem 2.5rem 0rem;
+  margin: 0.5rem 0rem 2.5rem 0rem;
 }
 
 .email-holder-contain {
@@ -126,6 +126,35 @@ p {
   width: 100%;
   white-space: none;
   margin-top: 0rem;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.landing-email-input:focus {
+  border: none;
+  outline: none;
+}
+
+.cta-b {
+  position: relative;
+}
+
+.floating-label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  font-size: 18px;
+  cursor: text;
+  color: #8c8c8c;
+}
+
+input:focus ~ .floating-label,
+input:valid ~ .floating-label {
+  font-size: 12px;
+  font-weight: bold;
+  transform: translateY(-55%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
 }
 
 .landing-email-btn {
@@ -177,6 +206,9 @@ p {
     min-height: 40px;
   }
 
+  .holder {
+    padding-top: 5rem;
+  }
   .s-email {
     font-size: var(--btn-font-text-2);
   }
@@ -184,17 +216,64 @@ p {
   .cta-b {
     width: 100%;
   }
+  .holder-3 {
+    display: flex;
+    justify-content: center;
+  }
+  .landing-p-2 {
+    width: 25rem;
+  }
+
+  .email-holder-contain {
+    width: 28rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
   /* landing page */
   .email-holder-contain {
     padding: 0;
-    width: 100%;
   }
 
   .email-holder {
-    border: 1px solid white;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .landing-p-2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .landing-h1 {
+    font-size: 1.75rem;
+  }
+
+  .landing-p {
+    font-size: 1rem;
+  }
+
+  .holder {
+    padding-top: 3rem;
+  }
+
+  .landing-nav-btn {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .email-holder-contain {
+    width: 100%;
+  }
+
+  .landing-p-2 {
+    width: 100%;
+  }
+
+  .holder {
     width: 100%;
   }
 }

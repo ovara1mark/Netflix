@@ -5,22 +5,29 @@ import { Button, Input } from "../../atoms";
 export const EmailRegister = () => {
   return (
     <>
-      <div className="email-holder">
-        <div className="email-holder-contain">
-          <div className="cta-b">
-            <Input
-              className="landing-email-input"
-              placeholder="Email address"
-            />
+      <form className="form-container">
+        <div className="email-holder">
+          <div className="email-holder-contain">
+            <div className="cta-b">
+              <Input
+                type="email"
+                className="landing-email-input"
+                label={
+                  <>
+                    <label class="floating-label">Email address</label>
+                  </>
+                }
+              />
+            </div>
+            <Button className="landing-email-btn">
+              <span className="cta">Get Started</span>
+              <span>
+                <BsChevronRight className="s-email" />
+              </span>
+            </Button>
           </div>
-          <Button className="landing-email-btn">
-            <span className="cta">Get Started</span>
-            <span>
-              <BsChevronRight className="s-email" />
-            </span>
-          </Button>
         </div>
-      </div>
+      </form>
     </>
   );
 };

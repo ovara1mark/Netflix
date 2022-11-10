@@ -23,6 +23,7 @@ export const LandingHeader = () => {
             membership.
           </Text>
         </div>
+
         <EmailRegister />
       </Header>
     </>
