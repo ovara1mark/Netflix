@@ -14,7 +14,7 @@ export const EmailRegister = () => {
                 className="landing-email-input"
                 label={
                   <>
-                    <label class="floating-label">Email address</label>
+                    <label className="floating-label">Email address</label>
                   </>
                 }
               />

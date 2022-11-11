@@ -1,5 +1,5 @@
 import React from "react";
-import { LandingNavbar } from "../../molecules";
+import { Enjoy, LandingNavbar } from "../../molecules";
 import { LandingHeader } from "../../organisms";
 import { PageTemplate } from "../../templates/PageTemplate";
 
@@ -13,6 +13,7 @@ export const LandingPage = () => {
               <section className="landing-header">
                 <LandingNavbar />
                 <LandingHeader />
+                <Enjoy />
               </section>
             </main>
           </>

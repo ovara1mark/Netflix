@@ -186,6 +186,68 @@ input:valid ~ .floating-label {
   padding-right: 0.5rem;
 }
 
+/* landing page - enjoy section  */
+.enjoy-h1 {
+  font-size: var(--landing-h1);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.enjoy-p {
+  font-size: 1.5rem;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+  margin: 0.75em 0 0.25em;
+}
+
+.story-tell {
+  margin: -10% -5% -5% 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tv {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+.story-tv {
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.tv-video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 1000px) {
+  /* landing page enjoy */
+  .enjoy-h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .enjoy-p {
+    font-size: 1.3rem;
+  }
+}
 @media screen and (max-width: 950px) {
   /* landing page */
   .email-holder-contain {
@@ -227,6 +289,16 @@ input:valid ~ .floating-label {
   .email-holder-contain {
     width: 28rem;
   }
+
+  .enjoy-h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .enjoy-p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -241,6 +313,7 @@ input:valid ~ .floating-label {
 }
 
 @media screen and (max-width: 750px) {
+  /* landing page */
   .landing-p-2 {
     font-size: 1rem;
   }
@@ -265,6 +338,7 @@ input:valid ~ .floating-label {
 }
 
 @media screen and (max-width: 500px) {
+  /* landing page */
   .email-holder-contain {
     width: 100%;
   }
