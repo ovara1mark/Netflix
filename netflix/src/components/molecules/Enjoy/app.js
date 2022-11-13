@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EnjoySection = styled.section`
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1150px;
 
   @media screen and (max-width: 950px) {
     justify-content: center;
@@ -37,6 +37,7 @@ export const EnjoyLeft = styled.div`
     align-item: center;
     z-index: 100;
     position: relative;
+    padding-top: 0rem;
   }
 `;
 

@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-family-sans);
 }
 
 h1,
@@ -237,14 +238,125 @@ input:valid ~ .floating-label {
   vertical-align: baseline;
 }
 
+/* landing page = download section */
+
+.download-img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+.download-animate {
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 55%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+  padding: 0.5em 0.75em;
+}
+
+.download-card-img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+
+.small-img {
+  height: 4.5em;
+  max-width: 100%;
+}
+
+.download-card-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+
+.text-0 {
+  font-size: 1em;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+}
+
+.text-1 {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: var(--font-weight-400);
+  font-family: var(--font-family-sans);
+}
+
+.download-card-custom {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+
+.dn-h1 {
+  font-size: var(--landing-h1);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+}
+
+.dn-h2 {
+  font-size: var(--landing-p);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+}
+
+/* landing page watch */
+
+.watch-h1 {
+  font-size: var(--landing-h1);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.watch-h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+  margin: 0.75em 0 0.25em;
+}
+
+@media screen and (max-width: 1200px) {
+  .download-img {
+    padding-left: 2.5rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   /* landing page enjoy */
-  .enjoy-h1 {
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1 {
     font-size: 2.6rem;
     font-weight: 700;
   }
 
-  .enjoy-p {
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2 {
     font-size: 1.3rem;
   }
 }
@@ -290,14 +402,44 @@ input:valid ~ .floating-label {
     width: 28rem;
   }
 
-  .enjoy-h1 {
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1 {
     text-align: center;
     font-size: 2.4rem;
   }
 
-  .enjoy-p {
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2 {
     text-align: center;
     font-size: 1.2rem;
+  }
+
+  /* landing page download */
+  .download-animate {
+    left: 50%;
+  }
+
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
+  .small-img {
+    height: 2.8em;
+  }
+  .download-img {
+    padding-left: 0rem;
+  }
+  .download-animate {
+    bottom: 5%;
+  }
+
+  .download-card-custom {
+    height: 2.8em;
   }
 }
 
@@ -310,12 +452,26 @@ input:valid ~ .floating-label {
   .email-holder {
     width: 100%;
   }
+
+  /* landing page download */
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
 }
 
 @media screen and (max-width: 750px) {
   /* landing page */
   .landing-p-2 {
     font-size: 1rem;
+  }
+
+  /* landing page download */
+  .download-animate {
+    left: 50%;
   }
 }
 
@@ -335,6 +491,48 @@ input:valid ~ .floating-label {
   .landing-nav-btn {
     padding: 0.25rem 0.5rem;
   }
+
+  /* landing page donwload */
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1 {
+    font-size: 1.625rem;
+  }
+
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2 {
+    font-size: 1.125rem;
+  }
+
+  .dn-h1,
+  .dn-h2 {
+    width: 100%;
+  }
+
+  .dn-h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
+  .small-img {
+    height: 2.8em;
+  }
+
+  .download-animate {
+    width: 75%;
+    bottom: 5%;
+  }
+
+  .download-card-custom {
+    height: 2.8em;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -349,5 +547,42 @@ input:valid ~ .floating-label {
 
   .holder {
     width: 100%;
+  }
+
+  /* landing page download*/
+  .small-img {
+    height: 2.5em;
+  }
+
+  .download-animate {
+    width: 75%;
+    bottom: 3%;
+  }
+
+  .download-card-custom {
+    height: 2.5em;
+  }
+}
+
+@media screen (width: 280px) and (height: 653px) {
+  /* landing page download*/
+  .small-img {
+    height: 1.5em;
+  }
+
+  .download-animate {
+    width: 8rem;
+    bottom: 3%;
+  }
+
+  .download-card-custom {
+    height: 1.5em;
+  }
+  .text-1 {
+    font-size: 0.5em;
+  }
+
+  .text-0 {
+    font-size: 0.75em;
   }
 }
