@@ -6,8 +6,6 @@ import CardImg from "../../../Asset/card-img.jpg";
 import CardImg2 from "../../../Asset/card-img2.jpg";
 import CardImg3 from "../../../Asset/card-img3.jpg";
 
-import { NavBar } from "../../molecules";
-
 export const HomeAdults = () => {
 
     return (
