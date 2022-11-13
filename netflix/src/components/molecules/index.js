@@ -5,3 +5,4 @@ export * from "./EmailRegister";
 export * from "./Enjoy";
 export * from "./Download";
 export * from "./Watch";
+export * from "./Kids";

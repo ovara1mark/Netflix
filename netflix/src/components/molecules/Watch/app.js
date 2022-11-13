@@ -15,6 +15,10 @@ export const WatchContain = styled.section`
 export const WatchHold = styled.div`
   width: 50%;
   padding-left: 3rem;
+  @media screen and (max-width: 1200px) {
+    padding-left: 0.5rem;
+    width: 52%;
+  }
   @media screen and (max-width: 950px) {
     width: 100%;
     padding-left: 0rem;
