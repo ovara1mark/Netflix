@@ -1,9 +1,9 @@
 import React from "react";
 
-export const TvShowsAdults = () => {
+export const TvShowsKids = () => {
     return (
         <div>
-            <h1>Tv shows adults</h1>
+            <h1>Tv Shows Kids</h1>
         </div>
     );
-};
+}

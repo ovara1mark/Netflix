@@ -2,6 +2,8 @@ import React from "react";
 
 export const WhoIsWatching = () => {
     return(
-        <div>Hello</div>
+        <div>
+            <h1>Who is Watching?</h1>
+        </div>
     );
 };

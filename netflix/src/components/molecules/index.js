@@ -6,3 +6,6 @@ export * from "./Enjoy";
 export * from "./Download";
 export * from "./Watch";
 export * from "./Kids";
+export * from "./LandingFooter";
+export * from "./AdultNav";
+export * from "./KidsNav";

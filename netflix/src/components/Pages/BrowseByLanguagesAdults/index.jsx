@@ -2,6 +2,8 @@ import React from "react";
 
 export const BrowseByLanguagesAdults = () => {
     return (
-        <div>Hello</div>
+        <div>
+            <h1>Languages</h1>
+        </div>
     )
 };

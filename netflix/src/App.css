@@ -2,6 +2,7 @@
   --btn-red: #e50914;
   --btn-red-2: #e40914;
   --btn-white: #fffff7;
+  --footer-grey: #737373;
   --landing-h1: 3.125rem;
   --landing-p: 1.625rem;
   --landing-p-2: 1.2rem;
@@ -363,6 +364,132 @@ input:valid ~ .floating-label {
   margin: 0.75em 0 0.25em;
 }
 
+/* landing page frequent */
+
+.top-h1 {
+  font-size: var(--landing-h1);
+  font-weight: var(--font-weight-700);
+  color: var(--btn-white);
+  text-align: center;
+}
+
+.fq-btn {
+  padding-top: 5px;
+  color: var(--btn-white);
+}
+
+.font-fq {
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+}
+
+.font-fq-add {
+  transform: translateY(-50%) rotate(-45deg);
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+  position: relative;
+  top: 0.6rem;
+}
+.fq-holder {
+  margin: 0 0 8px;
+  border: 0;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  position: relative;
+  width: 65%;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.fq-p-head,
+.fq-content {
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+}
+
+.fq-content {
+  margin-bottom: 2px;
+  top: -6px;
+  border: 0;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  position: relative;
+  width: 65%;
+  background-color: #303030;
+}
+
+.content-p {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.p-2 {
+  padding-top: 0rem;
+}
+.fq-content {
+  background: #303030;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  max-height: 1200px;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  visibility: visible;
+  margin-top: 0rem;
+}
+
+.fq-content-hidden {
+  max-height: 0;
+  margin-bottom: 0rem;
+  visibility: hidden;
+}
+
+/* landing page footer */
+.q-cs {
+  font-size: 0.9em;
+  color: var(--footer-grey);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: var(--font-weight-500);
+  font-family: var(--font-family-sans);
+}
+
+.q-cs:hover {
+  text-decoration: underline;
+}
+
+.ft-p {
+  font-size: 13px;
+  margin-top: 24px;
+  color: var(--footer-grey);
+}
+
+.ext-ul li {
+  list-style: none;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+}
+
+.ext-ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: var(--font-weight-500);
+  color: var(--footer-grey);
+}
+
+.ext-ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-hold {
+  display: flex;
+  justify-content: center;
+  padding-left: 4rem;
+}
 @media screen and (max-width: 1200px) {
   .download-img {
     padding-left: 2.5rem;
@@ -373,7 +500,8 @@ input:valid ~ .floating-label {
   .enjoy-h1,
   .dn-h1,
   .watch-h1,
-  .kids-h1 {
+  .kids-h1,
+  .top-h1 {
     font-size: 2.6rem;
     font-weight: 700;
   }
@@ -430,7 +558,8 @@ input:valid ~ .floating-label {
   .enjoy-h1,
   .dn-h1,
   .watch-h1,
-  .kids-h1 {
+  .kids-h1,
+  .top-h1 {
     text-align: center;
     font-size: 2.4rem;
   }
@@ -473,6 +602,28 @@ input:valid ~ .floating-label {
   .kids-img {
     padding-right: 0rem;
   }
+
+  /* frequently */
+  .fq-holder {
+    padding: 1rem 2rem;
+    width: 90%;
+  }
+
+  .fq-p-head,
+  .fq-content {
+    color: var(--btn-white);
+    font-size: var(--landing-p-2);
+  }
+
+  .font-fq,
+  .font-fq-add {
+    font-size: var(--landing-p-2);
+  }
+
+  .fq-content {
+    padding: 1rem 2rem;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -492,6 +643,11 @@ input:valid ~ .floating-label {
 
   .text-1 {
     font-size: 0.75em;
+  }
+
+  /* landing page footer */
+  .footer-hold {
+    padding-left: 0rem;
   }
 }
 
@@ -528,7 +684,8 @@ input:valid ~ .floating-label {
   .enjoy-h1,
   .dn-h1,
   .watch-h1,
-  .kids-h1 {
+  .kids-h1,
+  .top-h1 {
     font-size: 1.625rem;
   }
 
@@ -566,6 +723,28 @@ input:valid ~ .floating-label {
 
   .download-card-custom {
     height: 2.8em;
+  }
+
+  /* frequently */
+  .fq-holder {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .fq-p-head,
+  .fq-content {
+    color: var(--btn-white);
+    font-size: var(--landing-p-2);
+  }
+
+  .font-fq,
+  .font-fq-add {
+    font-size: var(--landing-p-2);
+  }
+
+  .fq-content {
+    padding: 1rem 2rem;
+    width: 100%;
   }
 }
 

@@ -2,6 +2,8 @@ import React from "react";
 
 export const MyListAdults = () => {
     return (
-        <div>Hello</div>
+        <div>
+            <h1>My list</h1>
+        </div>
     )
 };
