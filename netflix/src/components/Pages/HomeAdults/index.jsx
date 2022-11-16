@@ -17,7 +17,7 @@ export const HomeAdults = () => {
             <AdultNav />
             <div style={{position: "absolute", width: "50%", padding: "0 50px", marginTop: "64px"}}>
             <img style={{width: "85%"}} src={title} alt="hero-title" />
-            <p style={{textShadow: "2px 2px 4px rgb(0 0 0 / 45%)", color: "white", width: "85%"}}>
+            <p style={{textShadow: "2px 2px 4px rgb(0 0 0 / 45%)", color: "white", width: "85%", marginBottom: "32px"}}>
             A TV producer discovers a secret supernatural world as she becomes entangled with a former deity who's spent centuries searching for his lost lover.
             </p>
             <div style={{display: "flex", justifyContent: "space-between"}}>
