@@ -16,3 +16,5 @@ export * from "./Characters";
 export * from "./AdultProfile";
 export * from "./KidsProfile";
 export * from "./SignIn";
+export * from "./Registration";
+export * from "./RegistrationDetails";

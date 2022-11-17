@@ -9,6 +9,8 @@ import {
   MyListAdults,
   NewAndPopularAdults,
   TvShowsAdults,
+  Registration,
+  RegistrationDetails,
 } from "./components";
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           element={<BrowseByLanguagesAdults />}
         />
         <Route exact path="signin" element={<SignIn />} />
+        <Route exact path="registration" element={<Registration />} />
+        <Route exact path="/signup/regform" element={<RegistrationDetails />} />
       </Routes>
     </BrowserRouter>
   );

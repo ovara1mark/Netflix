@@ -9,3 +9,6 @@ export * from "./Kids";
 export * from "./LandingFooter";
 export * from "./AdultNav";
 export * from "./KidsNav";
+export * from "./RegistrationNavbar";
+export * from "./RegistrationSection";
+export * from "./RegDetailSection";
