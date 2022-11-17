@@ -1,6 +1,6 @@
 import React from "react";
 import { AdultNav } from "../../molecules";
-import title from "../../../assets/movie-title.webp";
+import title from "../../../assets/movie-title2.webp";
 import {
   FaAngleLeft,
   FaAngleRight,
@@ -14,6 +14,7 @@ import {
 import CardImg from "../../../assets/card-img.jpg";
 import CardImg2 from "../../../assets/card-img2.jpg";
 import CardImg3 from "../../../assets/card-img3.jpg";
+import "./home.css";
 
 export const HomeAdults = () => {
   return (
@@ -26,7 +27,7 @@ export const HomeAdults = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-          src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031"
+          src="https://occ-0-1168-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcr90E92rlkSBcKLFCJGwko1KgIeEoHJBczS1JgUrz0mMwstkOuTpZ-FvmJ4TT26UWDgo4-FJg9i-rDL6elH1WPeBjsn3NMOkCyB.webp?r=496"
           alt="hero-banner"
         />
         <AdultNav />
@@ -46,11 +47,9 @@ export const HomeAdults = () => {
               width: "85%",
             }}
           >
-            A TV producer discovers a secret supernatural world as she becomes
-            entangled with a former deity who's spent centuries searching for
-            his lost lover.
+            Dark secrets and mysterious connections among the passengers of the Kerberos come to light when they encounter a missing ship, the Prometheus.
           </p>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop: "32px" }}>
             <div style={{ display: "flex", gap: "16px" }}>
               <button
                 style={{
@@ -102,19 +101,18 @@ export const HomeAdults = () => {
       </div>
       <div style={{ width: "100%", paddingLeft: "50px", height: "25vh" }}>
         <div
-          style={{ width: "100%", position: "relative", marginTop: "500px" }}
+          style={{ width: "100%", position: "relative", marginTop: "450px" }}
         >
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            Bingeworthy TvShows
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
           </p>
-          <div style={{ width: "fit-content" }}>
+          <div style={{}}>
             <div
               style={{
-                display: "grid",
+                display: "flex",
+                alignItems: "center",
                 overflow: "hidden",
                 gap: "8px",
-                gridRows: "1",
-                gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
               }}
             >
               <div style={{}}>
@@ -176,6 +174,30 @@ export const HomeAdults = () => {
                 />
               </div>
               <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{Right: "-200px"}}>
                 <img
                   style={{
                     backgroundPosition: "center",

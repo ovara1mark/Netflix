@@ -3,3 +3,7 @@
     width: 120%;
     transition: 3s ease-in-out;
 }
+
+.banner-text {
+    font-weight: 600;
+}
