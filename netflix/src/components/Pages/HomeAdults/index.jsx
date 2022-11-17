@@ -1,15 +1,13 @@
 import React from "react";
 import { AdultNav } from "../../molecules";
 import title from "../../../Asset/movie-title.webp";
-import { FaAngleLeft, FaAngleRight, FaInfoCircle, FaPlay } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaInfoCircle, FaPlay, FaThumbsUp } from "react-icons/fa";
 import CardImg from "../../../Asset/card-img.jpg";
 import CardImg2 from "../../../Asset/card-img2.jpg";
 import CardImg3 from "../../../Asset/card-img3.jpg";
-import { useState } from "react";
-
+import "./home.css";
 
 export const HomeAdults = () => {
-    const [isHovered, setIsHovered] = useState(false);
     return (
         <>
         <div>
@@ -33,16 +31,12 @@ export const HomeAdults = () => {
             <div style={{width: "100%", position: "relative", marginTop: "500px", }}>
             <p style={{color: "white", marginTop: "50px", fontSize: "1.2rem"}}>Bingeworthy TvShows</p>
             <div style={{display: "flex", gap: "8px", overflow: "hidden", width: "100%"}}>
-            <div onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}  style={{width: "100%", color: "white",}}>
-                <img style={{width: "100%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px" }} src={CardImg3} alt="" />
-                {isHovered && (
-                    <div style={{width: "130%", top: "-10px", display: "block", cursor: "pointer", position: "relative", zIndex: "10", backgroundColor: "black", borderRadius: "10px", boxShadow: "8px"}}>
-                        <img style={{width: "100%", backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px", marginTop: "-400px" }} src={CardImg3} alt="" />
-                        <h3>Hello</h3>
-                        <p style={{marginBottom: "32px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolore nam ipsum illo explicabo veritatis minus. Ad aliquam minima voluptates consequuntur rem officiis, provident fugiat voluptatem, dolor nisi a totam?</p>
+            <div className="grid-card" style={{width: "100%"}}>
+                <img style={{width: "100%",backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src={CardImg3} alt="" />
+                <div>
+                    <FaPlay />
+                    <FaThumbsUp />
                 </div>
-                )}
             </div>
             <div style={{width: "100%"}}>
                 <img style={{width: "100%",backgroundPosition: "center", backgroundRepeat: "no-repeat", borderRadius: "5px"}} src={CardImg} alt="" />
