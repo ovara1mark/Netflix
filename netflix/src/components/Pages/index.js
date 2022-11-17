@@ -6,7 +6,7 @@ export * from "./MoviesAdults";
 export * from "./NewAndPopularAdults";
 export * from "./MyListAdults";
 export * from "./BrowseByLanguagesAdults";
-export * from "./BrowseByLanguagesKids"
+export * from "./BrowseByLanguagesKids";
 export * from "./HomeKids";
 export * from "./MoviesKids";
 export * from "./MyListKids";
@@ -15,3 +15,6 @@ export * from "./TvShowsKids";
 export * from "./Characters";
 export * from "./AdultProfile";
 export * from "./KidsProfile";
+export * from "./SignIn";
+export * from "./Registration";
+export * from "./RegistrationDetails";

@@ -4,16 +4,16 @@ import { Image } from "../../atoms/Image";
 import { Nav, NavLeft, NavRight } from "./app";
 import { Link } from "react-router-dom";
 
-export const LandingNavbar = () => {
+export const RegistrationNavbar = () => {
   return (
     <>
       <Nav>
         <NavLeft>
-          <Image src={logo} alt="logo" className="landing-logo" />
+          <Image src={logo} alt="logo" className="registration-logo" />
         </NavLeft>
         <NavRight>
           <Link to="/signin">
-            <button className="landing-nav-btn">Sign In</button>
+            <button className="registration-nav-btn">Sign In</button>
           </Link>
         </NavRight>
       </Nav>

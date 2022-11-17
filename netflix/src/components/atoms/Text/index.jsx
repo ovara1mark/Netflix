@@ -1,17 +1,17 @@
 import React from "react";
 
-export const Text = ({ type, children }) => {
+export const Text = ({ type, children, className }) => {
   if (type === "p") {
-    return <p>{children}</p>;
+    return <p className={className}>{children}</p>;
   }
 
   if (type === "h1") {
-    return <h1>{children}</h1>;
+    return <h1 className={className}>{children}</h1>;
   }
 
   if (type === "h2") {
-    return <h2>{children}</h2>;
+    return <h2 className={className}>{children}</h2>;
   }
 
-  return <p>{children}</p>;
+  return <span className={className}>{children}</span>;
 };
