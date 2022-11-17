@@ -625,6 +625,7 @@ input:valid ~ .floating-label {
   left: -0.5rem;
   border: 5px solid var(--footer-grey);
   background-color: var(--btn-white);
+  margin: 8px 0;
 }
 
 .checkbox-reg:focus {
