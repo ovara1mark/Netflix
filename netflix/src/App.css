@@ -3,6 +3,7 @@
   --btn-red-2: #e40914;
   --btn-white: #fffff7;
   --footer-grey: #737373;
+  --register-btn: #333;
   --landing-h1: 3.125rem;
   --landing-p: 1.625rem;
   --landing-p-2: 1.2rem;
@@ -11,6 +12,8 @@
   --btn-border-radius: 0.3rem;
   --font-family-bebas: "Bebas Neue", cursive;
   --font-family-sans: "Open Sans", sans-serif;
+  --font-family-segeo: "Segoe UI", Tahoma, Geneva, Verdana, UI, Roboto, Ubuntu,
+    sans-serif;
   --font-weight-300: 300;
   --font-weight-400: 400;
   --font-weight-500: 500;
@@ -490,6 +493,106 @@ input:valid ~ .floating-label {
   justify-content: center;
   padding-left: 4rem;
 }
+
+/* Registration Page */
+.registration-nav-btn {
+  background-color: var(--btn-white);
+  color: var(--register-btn);
+  font-size: 19px;
+  border: none;
+  padding: 7px 17px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-700);
+}
+
+.registration-nav-btn:hover {
+  text-decoration: underline;
+}
+
+.registration-logo {
+  max-width: 100%;
+}
+
+.register-icon {
+  margin: 100px 0 20px;
+  width: 260px;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png)
+    no-repeat 50% 50%;
+  background-size: 260px;
+  height: 90px;
+}
+
+.register-text {
+  font-size: 13px;
+  font-family: var(--font-family-segeo);
+  color: var(--register-btn);
+}
+
+.register-h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 0.4em;
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-700);
+  color: var(--register-btn);
+}
+
+.register-text-contain {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-p {
+  font-size: 18px;
+  color: var(--register-btn);
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-500);
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.register-btn {
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 64px;
+  background-color: #f6121d;
+  padding: 20.5px 2em;
+  width: 100%;
+  border: none;
+  color: var(--btn-white);
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: var(--btn-red);
+}
+
+.link-btn-reg {
+  text-decoration: none;
+  color: var(--btn-white);
+}
+
+.reg-txt {
+  text-align: left;
+  max-width: 400px;
+}
+
+.reg-txt-2 {
+  text-align: left;
+  max-width: 370px;
+  line-height: 1.6em;
+}
+
+.reg-contain {
+  display: block;
+  max-width: 440px;
+}
 @media screen and (max-width: 1200px) {
   .download-img {
     padding-left: 2.5rem;
@@ -775,6 +878,21 @@ input:valid ~ .floating-label {
   .download-card-custom {
     height: 2.5em;
   }
+
+  /* registration page */
+  .registration-nav-btn {
+    font-size: 14px;
+  }
+
+  .register-text-contain {
+    display: block;
+  }
+
+  .register-p,
+  .register-h1,
+  .reg-txt {
+    text-align: start;
+  }
 }
 
 @media screen and (width: 280px) and (height: 653px) {
@@ -791,7 +909,6 @@ input:valid ~ .floating-label {
   .download-card-custom {
     height: 1.5em;
   }
-  
   .text-1 {
     font-size: 0.5em;
   }

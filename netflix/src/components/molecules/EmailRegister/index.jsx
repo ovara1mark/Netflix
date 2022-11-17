@@ -1,6 +1,7 @@
 import React from "react";
 import { BsChevronRight } from "react-icons/bs";
 import { Button, Input } from "../../atoms";
+import { Link } from "react-router-dom";
 
 export const EmailRegister = () => {
   return (
@@ -20,10 +21,12 @@ export const EmailRegister = () => {
               />
             </div>
             <Button className="landing-email-btn">
-              <span className="cta">Get Started</span>
-              <span>
-                <BsChevronRight className="s-email" />
-              </span>
+              <Link to="/registration" className="link-btn-reg">
+                <span className="cta">Get Started</span>
+                <span>
+                  <BsChevronRight className="s-email" />
+                </span>
+              </Link>
             </Button>
           </div>
         </div>
