@@ -11,6 +11,7 @@ import {
   TvShowsAdults,
   Registration,
   RegistrationDetails,
+  AdultProfile,
 } from "./components";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/homeadults" element={<HomeAdults />} />
+        <Route exact path="/adultsprofile" element={<AdultProfile />} />
         <Route exact path="/tvshowsadults" element={<TvShowsAdults />} />
         <Route exact path="/moviesadults" element={<MoviesAdults />} />
         <Route

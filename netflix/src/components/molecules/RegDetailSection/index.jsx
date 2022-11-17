@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Text } from "../../atoms";
+import { Button, Text, Input } from "../../atoms";
 import { Link } from "react-router-dom";
 import { RegisterContain, RegisterHold, RegisterSection } from "./app";
 
@@ -19,6 +19,46 @@ export const RegDetailSection = () => {
               <div className="register-p reg-txt reg-txt-2">
                 Just a few more steps and you're done! We hate paperwork, too.
               </div>
+              <form>
+                <div className="cta-b cta-b-reg">
+                  <Input
+                    type="email"
+                    className="landing-email-input reg-input"
+                    label={
+                      <>
+                        <label className="floating-label">Email</label>
+                      </>
+                    }
+                    required
+                  />
+                </div>
+                <div className="cta-b cta-b-reg">
+                  <Input
+                    type="password"
+                    className="landing-email-input reg-input"
+                    label={
+                      <>
+                        <label className="floating-label">Add a password</label>
+                      </>
+                    }
+                    required
+                  />
+                </div>
+                <div className="check-reg">
+                  <Input
+                    type="checkbox"
+                    className="checkbox-reg"
+                    label={
+                      <>
+                        <label className="checkbox-label">
+                          Please do not email me Netflix special offers
+                        </label>
+                      </>
+                    }
+                    required
+                  />
+                </div>
+              </form>
 
               <Button className="register-btn">
                 <Link to="/signup/regform" className="link-btn-reg">

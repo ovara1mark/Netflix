@@ -4,6 +4,7 @@
   --btn-white: #fffff7;
   --footer-grey: #737373;
   --register-btn: #333;
+  --checkblue: #0071eb;
   --landing-h1: 3.125rem;
   --landing-p: 1.625rem;
   --landing-p-2: 1.2rem;
@@ -592,6 +593,47 @@ input:valid ~ .floating-label {
 .reg-contain {
   display: block;
   max-width: 440px;
+}
+
+.reg-input {
+  appearance: none;
+  border: 1px solid #8c8c8c;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 60px;
+}
+.reg-input:focus {
+  border-color: var();
+}
+
+.cta-b-reg {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-reg {
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+  color: var(--footer-grey);
+  height: 27px;
+  width: 44px;
+  position: relative;
+  left: -0.5rem;
+  border: 5px solid var(--footer-grey);
+  background-color: var(--btn-white);
+}
+
+.checkbox-reg:focus {
+  border-color: var(--checkblue);
+}
+
+.checkbox-label {
+  position: absolute;
+  margin-top: 0px;
 }
 @media screen and (max-width: 1200px) {
   .download-img {

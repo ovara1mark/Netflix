@@ -15,6 +15,34 @@ export const Input = ({ label, onChange, type, className, placeholder }) => {
     );
   }
 
+  if (type === "password") {
+    return (
+      <label htmlFor={label}>
+        {label}
+        <input
+          id={label}
+          type="password"
+          className={className}
+          onChange={onChange}
+        />
+      </label>
+    );
+  }
+
+  if (type === "checkbox") {
+    return (
+      <label htmlFor={label}>
+        <input
+          id={label}
+          type="checkbox"
+          className={className}
+          onChange={onChange}
+        />
+        {label}
+      </label>
+    );
+  }
+
   if (type === "email") {
     return (
       <label htmlFor={label}>
