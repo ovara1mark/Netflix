@@ -1,6 +1,7 @@
 import React from "react";
-import { FaSearch, FaBell, FaCaretDown, FaRegUser } from "react-icons/fa";
+import { FaSearch, FaBell, FaCaretDown } from "react-icons/fa";
 import logo from "../../../assets/logo.svg";
+import Profile from "../../../assets/profile1.png"
 
 export const AdultNav = () => {
   return (
@@ -46,7 +47,7 @@ export const AdultNav = () => {
         <span>Kids</span>
         <FaBell style={{ fontSize: "1.2rem" }} />
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <FaRegUser style={{ fontSize: "1.2rem" }} />
+          <img src={Profile} style={{width: "30px"}} />
           <FaCaretDown style={{ fontSize: "1.2rem" }} />
         </div>
       </div>

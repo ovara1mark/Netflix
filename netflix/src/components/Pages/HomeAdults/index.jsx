@@ -1,12 +1,15 @@
 import React from "react";
 import { AdultNav } from "../../molecules";
-import title from "../../../assets/movie-title.webp";
+import title from "../../../assets/movie-title2.webp";
 import {
   FaAngleLeft,
   FaAngleRight,
+  FaChevronCircleDown,
   FaInfoCircle,
   FaPlay,
-  FaThumbsUp,
+  FaPlayCircle,
+  FaPlusCircle,
+  FaRegThumbsUp,
 } from "react-icons/fa";
 import CardImg from "../../../assets/card-img.jpg";
 import CardImg2 from "../../../assets/card-img2.jpg";
@@ -24,7 +27,7 @@ export const HomeAdults = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-          src="https://occ-0-5543-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVk4xIur0E3jyFbckGV3xEDY7PjWG14B4-No0owPK4VSwU54OW5llS4JFbqOjMFB6OYAoz5unKiwqlDzfA5NKkledt789Tk5VwtA.webp?r=031"
+          src="https://occ-0-1168-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcr90E92rlkSBcKLFCJGwko1KgIeEoHJBczS1JgUrz0mMwstkOuTpZ-FvmJ4TT26UWDgo4-FJg9i-rDL6elH1WPeBjsn3NMOkCyB.webp?r=496"
           alt="hero-banner"
         />
         <AdultNav />
@@ -42,14 +45,11 @@ export const HomeAdults = () => {
               textShadow: "2px 2px 4px rgb(0 0 0 / 45%)",
               color: "white",
               width: "85%",
-              marginBottom: "32px",
             }}
           >
-            A TV producer discovers a secret supernatural world as she becomes
-            entangled with a former deity who's spent centuries searching for
-            his lost lover.
+            Dark secrets and mysterious connections among the passengers of the Kerberos come to light when they encounter a missing ship, the Prometheus.
           </p>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop: "32px" }}>
             <div style={{ display: "flex", gap: "16px" }}>
               <button
                 style={{
@@ -101,194 +101,115 @@ export const HomeAdults = () => {
       </div>
       <div style={{ width: "100%", paddingLeft: "50px", height: "25vh" }}>
         <div
-          style={{ width: "100%", position: "relative", marginTop: "500px" }}
+          style={{ width: "100%", position: "relative", marginTop: "450px" }}
         >
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            Bingeworthy TvShows
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
           </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "8px",
-              overflow: "hidden",
-              width: "100%",
-            }}
-          >
-            <div className="grid-card" style={{ width: "100%" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg3}
-                alt=""
-              />
-              <div>
-                <FaPlay />
-                <FaThumbsUp />
+          <div style={{}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                overflow: "hidden",
+                gap: "8px",
+              }}
+            >
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg3}
+                  alt=""
+                />
+                <p
+                  style={{
+                    color: "white",
+                    position: "relative",
+                    top: "-50px",
+                    marginLeft: "30px",
+                  }}
+                >
+                  Hello
+                </p>
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg2}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg3}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{Right: "-200px"}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
               </div>
             </div>
-            <div style={{ width: "100%" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg}
-                alt=""
-              />
-            </div>
-            <div style={{ width: "100%" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg2}
-                alt=""
-              />
-            </div>
-            <div style={{ width: "100%" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg3}
-                alt=""
-              />
-            </div>
-            <div style={{ width: "100%" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg}
-                alt=""
-              />
-            </div>
-            <div style={{ width: "100%", marginRight: "-200px" }}>
-              <img
-                style={{
-                  width: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  borderRadius: "5px",
-                }}
-                src={CardImg2}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            display: "none",
-            justifyContent: "space-between",
-            fontSize: "3rem",
-            marginTop: "-100px",
-          }}
-        >
-          <FaAngleLeft />
-          <FaAngleRight />
-        </div>
-      </div>
-      <div style={{ width: "100%", padding: "0px 50px", height: "25vh" }}>
-        <div style={{ width: "100%", position: "relative", marginTop: "50px" }}>
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            Trending Now
-          </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "4px",
-              overflow: "hidden",
-              width: "fit-content",
-            }}
-          >
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
           </div>
         </div>
         <div
@@ -298,96 +219,141 @@ export const HomeAdults = () => {
             display: "flex",
             justifyContent: "space-between",
             fontSize: "3rem",
-            marginTop: "-90px",
+            marginTop: "-150px",
           }}
         >
           <FaAngleLeft />
           <FaAngleRight />
         </div>
-      </div>
-      <div style={{ width: "100%", padding: "0px 50px", height: "25vh" }}>
-        <div style={{ width: "100%", position: "relative", marginTop: "50px" }}>
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            Top 10 TV Shows in Nigeria Today
+        <div style={{ width: "100%", position: "relative", marginTop: "30px" }}>
+          <p style={{ color: "white", marginTop: "100px", fontSize: "1.2rem" }}>
+            Bingeworthy TvShows
           </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "4px",
-              overflow: "hidden",
-              width: "fit-content",
-            }}
-          >
-            <img
+          <div style={{ width: "fit-content" }}>
+            <div
               style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
+                display: "grid",
+                overflow: "hidden",
+                gap: "8px",
+                gridRows: "1",
+                gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
               }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
+            >
+              <div style={{}}>
+                <div style={{ display: "flex" }}>
+                  <img
+                    style={{
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                      borderRadius: "5px",
+                      width: "100%",
+                    }}
+                    src={CardImg3}
+                    alt=""
+                  />
+                </div>
+                <div
+                  style={{
+                    color: "white",
+                    padding: "10px",
+                    backgroundColor: "transparent",
+                    marginTop: "10px",
+                  }}
+                >
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <span
+                      style={{
+                        display: "flex",
+                        gap: "8px",
+                        fontSize: "1.5rem",
+                      }}
+                    >
+                      <FaPlayCircle />
+                      <FaPlusCircle />
+                      <FaRegThumbsUp />
+                    </span>
+                    <div style={{ fontSize: "1.5rem" }}>
+                      <FaChevronCircleDown />
+                    </div>
+                  </div>
+                  <div style={{ display: "flex", gap: "2px" }}>
+                    <span
+                      style={{
+                        color: "green",
+                        fontWeight: "bold",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      90% Match
+                    </span>
+                    <span style={{ border: "1px solid white" }}>18+</span>
+                    <span>5 Seasons</span>
+                    <span style={{ border: "1px solid white" }}>HD</span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <span>Soapy</span>
+                    <span>Suspenseful</span>
+                    <span>Teens</span>
+                  </div>
+                </div>
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg2}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg3}
+                  alt=""
+                />
+              </div>
+              <div style={{}}>
+                <img
+                  style={{
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                  src={CardImg}
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -397,205 +363,8 @@ export const HomeAdults = () => {
             display: "flex",
             justifyContent: "space-between",
             fontSize: "3rem",
-            marginTop: "-90px",
-          }}
-        >
-          <FaAngleLeft />
-          <FaAngleRight />
-        </div>
-      </div>
-      <div style={{ width: "100%", padding: "0px 50px", height: "25vh" }}>
-        <div style={{ width: "100%", position: "relative", marginTop: "50px" }}>
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            Retro TV
-          </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "4px",
-              overflow: "hidden",
-              width: "fit-content",
-            }}
-          >
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: "3rem",
-            marginTop: "-90px",
-          }}
-        >
-          <FaAngleLeft />
-          <FaAngleRight />
-        </div>
-      </div>
-      <div style={{ width: "100%", padding: "0px 50px", height: "25vh" }}>
-        <div style={{ width: "100%", position: "relative", marginTop: "50px" }}>
-          <p style={{ color: "white", marginTop: "50px", fontSize: "1.2rem" }}>
-            TV Thrillers
-          </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "4px",
-              overflow: "hidden",
-              width: "fit-content",
-            }}
-          >
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg2}
-              alt=""
-            />
-            <img
-              style={{
-                width: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "5px",
-              }}
-              src={CardImg3}
-              alt=""
-            />
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: "3rem",
-            marginTop: "-90px",
+            alignItems: "center",
+            marginTop: "-200px",
           }}
         >
           <FaAngleLeft />
