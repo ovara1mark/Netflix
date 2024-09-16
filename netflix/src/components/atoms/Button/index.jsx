@@ -1,5 +1,5 @@
-import react from "react";
+import React from "react";
 
-export const Button = ({ text }) => {
-    return <button>{text}</button>;
+export const Button = ({ children, className }) => {
+  return <button className={className}>{children}</button>;
 };
